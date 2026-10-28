@@ -1,24 +1,28 @@
-# Python OOP and Database Fundamentals
+# Django Task Manager (Todo App)
 
-A collection of coursework and practical assignments covering Object-Oriented Programming (OOP) and SQLite databases in Python.
+A web application built with Django for managing personal tasks, todos, and task status tracking.
 
-## Repository Structure
+## Key Features
 
-* OOP Principles: Practice with classes, inheritance, encapsulation, and polymorphism (`oop.py`)
-* Decorators: Functions and decorators in Python (`decorator.py`)
-* Databases and SQL: Designing tables and executing SQL queries via SQLite (`database.py`)
-* Mini-projects:
-  * Cinema management system (`cinema.db`)
-  * Library tracking system (`library.db`)
+* Task Management: Create, read, update, and delete (CRUD) tasks
+* Project Organization: Modular Django apps (`todos` and project config)
+* Database Integration: SQLite for local storage of tasks and states
 
 ## Tech Stack
 
 * Python 3
+* Django
+* HTML/CSS
 * SQLite3
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clone the repository and run the project:
    ```bash
-   git clone [https://github.com/divarusa/python-oop-and-databases.git](https://github.com/divarusa/python-oop-and-databases.git)
-   cd python-oop-and-databases
+   git clone [https://github.com/divarusa/django-todo-app.git](https://github.com/divarusa/django-todo-app.git)
+   cd django-todo-app
+   python -m venv venv
+   source venv/bin/activate
+   pip install django
+   python manage.py migrate
+   python manage.py runserver
